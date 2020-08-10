@@ -1,0 +1,10 @@
+.individual {
+  display: flex;
+  border: solid 1px black;
+}
+
+.individual > div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
