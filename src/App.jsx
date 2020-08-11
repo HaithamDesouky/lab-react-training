@@ -12,6 +12,8 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
 
 function App() {
   return (
@@ -46,7 +48,7 @@ function App() {
           color="white"
         />
         <CreditCard
-          type="Master Card"
+          type="master-card"
           number="0123456789010995"
           expirationMonth={3}
           expirationYear={2021}
@@ -56,7 +58,7 @@ function App() {
           color="#222222"
         />
         <CreditCard
-          type="Visa"
+          type="visa"
           number="0123456789016984"
           expirationMonth={12}
           expirationYear={2019}
@@ -111,6 +113,13 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
+      <div>
+        <NumbersTable limit={12} />
+      </div>
+
+      <div className="facebook">
+        <Facebook />
+      </div>
     </div>
   );
 }

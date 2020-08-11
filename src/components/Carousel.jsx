@@ -11,14 +11,20 @@ class Carousel extends React.Component {
   }
   handleButtonClickLeft = () => {
     this.setState({
-      index: this.state.index === 0 ? 3 : this.state.index - 1,
+      index:
+        this.state.index === 0
+          ? this.props.imgs.length - 1
+          : this.state.index - 1,
     });
     console.log(this.state.index);
   };
 
   handleButtonClickRight = () => {
     this.setState({
-      index: this.state.index === 3 ? 0 : this.state.index + 1,
+      index:
+        this.state.index === this.props.imgs.length - 1
+          ? 0
+          : this.state.index + 1,
     });
     console.log(this.state.index);
   };
