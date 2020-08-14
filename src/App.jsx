@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
@@ -14,10 +13,12 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
+import SignUp from './components/SignUp';
 
 function App() {
   return (
     <div className="App">
+      <SignUp></SignUp>
       <IdCard
         lastName="Haitham"
         firstName="Desouky"

@@ -1,0 +1,11 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+text area {
+  font: inherit;
+  color: inherit;
+  padding: 1em;
+}
